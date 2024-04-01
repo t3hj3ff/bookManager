@@ -15,3 +15,6 @@ For API documentation import `bookManager.postman_collection.json` collection in
 
 In POSTMAN variables are not exported so after auth copy generated token and add it manually in headers with "Authorization":"Bearer <token>"
 
+
+
+In order to run tests just run `npm run test` (I made one example test)
