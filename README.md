@@ -6,6 +6,21 @@ Execute `books.sql` file in MySQL client.
 run > `npm install`
 
 
+Create `.env` file in root directory with following parameters:
+
+Example:
+
+DB_NAME=books
+
+DB_USER=root
+
+DB_PASS=root
+
+DB_HOST=localhost
+
+JWT_SECRET=jwtsecretkeyromelicaravinaricis123$
+
+
 For running server install nodemon or run it with `node app.js` command.
 
 
