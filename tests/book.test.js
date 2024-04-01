@@ -1,6 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
 
+//This is example test for getAllBooks
 describe('Books API', () => {
   it('GET /api/bookManager/getAllBooks should fetch all books', async () => {
     const response = await request(app).get('/api/bookManager/getAllBooks');

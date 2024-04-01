@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
 
+
+//Standart JWT authorization middleware
 exports.checkToken = (req, res, next) => {
   let token = req.headers['authorization'];
 
@@ -20,7 +22,7 @@ exports.checkToken = (req, res, next) => {
     });
   } else {
     return res.status(401).json({
-      message: 'No Token Presented'
+      message: 'Token not present'
     });
   }
 };

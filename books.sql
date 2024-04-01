@@ -31,9 +31,10 @@ CREATE TABLE IF NOT EXISTS `book` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Dumping data for table books.book: ~1 rows (approximately)
+-- Dumping data for table books.book: ~2 rows (approximately)
 INSERT INTO `book` (`id`, `title`, `description`, `lastPageRead`, `author`, `createdAt`, `updatedAt`) VALUES
-	(1, 'TestBook', '"newDesc"', 5, 'testAuthor', '2024-03-31 15:16:18', '2024-03-31 15:24:18');
+	(1, 'TestBook', '[{"page":1,"content":"Test content for page 1"},{"page":2,"content":"Test content for page 2"}]', 5, 'testAuthor', '2024-03-31 15:16:18', '2024-03-31 15:24:18'),
+	(2, 'TestBook2', '[{"page":1,"content":"Test content for page 1"},{"page":2,"content":"Test content for page 2"}]', 1, 'TestAuthor2', '2024-04-01 01:44:58', '2024-04-01 01:44:58');
 
 -- Dumping structure for table books.users
 CREATE TABLE IF NOT EXISTS `users` (

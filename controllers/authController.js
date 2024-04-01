@@ -36,7 +36,7 @@ exports.login = async (req, res) => {
 };
 
 
-//Controller for user registration
+//Controller for user registration & authorize after successful registration
 exports.register = async (req, res) => {
   const { username, password } = req.body;
 
